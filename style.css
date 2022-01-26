@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Playfair+Display:ital,wght@0,800;0,900;1,600&family=Poppins:wght@600;900&family=Titillium+Web&display=swap');
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+    overflow: hidden;
+     
+ }
+ .container{
+     position: relative;
+     background-image: linear-gradient(  rgb(192, 226, 253), rgb(185, 185, 247));
+     margin-top: 50px;
+   
+     /*display:none;*/
+ }
+ .imgSlides{
+     padding:10px;
+     text-align: center;
+ }
+ .imgSlides img{
+     width: 800px;
+     height: 600px;
+     border-radius: 2px;
+     box-shadow: 5px 7px 10px rgb(95, 94, 94);  
+     transition: all 0.4;
+ 
+ }
+ img:hover{
+     transform:scale(0.99);
+     opacity: 0.9;
+}
+   
+ .prev,.next{
+     cursor:pointer;
+     position: absolute;
+     top: 50%;
+     margin-top: -30px;
+     padding:16px;
+     color: black;
+     font-weight: bold;
+     font-size: 30px;
+     border-radius: 0 15px 15px 0;
+ }
+ .next{
+     right: 0;
+     border-radius: 15px 0 0 15px;
+ }
+ .prev:hover,.next:hover{
+     background-color:#a36dd8;
+     border:1px solid rgb(0, 0, 0);
+   
+ }
+ .circles{
+     text-align: center;
+     padding:20px;
+     margin-top:15px;
+ 
+ }
+ .circle{
+     width: 15px;
+     height: 15px;
+     background-color:lawngreen;
+    cursor: pointer;
+    display: inline-block;
+    border-radius:50%;
+    margin: 0 2px;
+ }
+ .active,.circle:hover{
+     background-color:rgb(161, 38, 161);
+ }
